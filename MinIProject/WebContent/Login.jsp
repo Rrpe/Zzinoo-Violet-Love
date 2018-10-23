@@ -57,7 +57,7 @@
 <script type="text/javascript">
    function page_href() {
 
-   location.href = "Signup.html";
+   location.href = "Signup.jsp";
 
 }
 </script>
