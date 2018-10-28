@@ -99,7 +99,7 @@ p {
 					<a class="p-2 text-muted" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="p-2 text-muted" href="list.jsp">ÀÚ°Ô</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="p-2 text-muted" href="Mapmain.jsp">memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="#">wish list</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="p-2 text-muted" href="#">mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="p-2 text-muted" href="#">today mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
 				</table>
 			</nav>

@@ -28,7 +28,7 @@
       </div>
       <div style="position: absolute;">
          <div style="position: relative; top: 450px; left: 175px;">
-            <a href="stage1.html"><img src="images/buttonStart.png"/></a>
+            <a href="stage1.jsp"><img src="images/buttonStart.png"/></a>
          </div>
       </div>
       

@@ -285,7 +285,7 @@ function checkEnd() {
   if (allTurnCount == rowSize * colSize) {
      var retVal = confirm("계속 게임을 하시겠습니까?");
      if(retVal == true){
-        location.href = "stage2.html";
+        location.href = "stage2.jsp";
      }else{
         endGame();
      }
