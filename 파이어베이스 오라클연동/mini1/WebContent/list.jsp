@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -30,9 +31,7 @@
 	background: #ccc;
 }
 </style>
-
 </head>
-
 <body>
 	<div class="container">
 		<header class="blog-header py-3">

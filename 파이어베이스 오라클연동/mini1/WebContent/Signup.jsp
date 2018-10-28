@@ -50,7 +50,7 @@ location.href = "Login.jsp";
 		</div>
 		<hr>
 		<h3 align="center" class="mb-3">회원가입 정보</h3>
-		<form class="form-signin" >
+		<form class="form-signin" action="sign.sign">
 			<div class="row">
 				<label for="userID">아이디</label> <input type="text" class="form-control" id="userID" placeholder="ID" required>
 				<br>

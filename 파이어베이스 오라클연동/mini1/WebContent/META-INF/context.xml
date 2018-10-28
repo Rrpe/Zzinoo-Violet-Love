@@ -34,7 +34,7 @@
     <Resource
 		auth="Container"
 		driverClassName="oracle.jdbc.driver.OracleDriver"
-		url="jdbc:oracle:thin:SYSTEM/1006dnfL@jw:1521:orcl"
+		url="jdbc:oracle:thin:SYSTEM/1006dnfL@172.22.232.92:1521:orcl"
 		username="SYSTEM"
 		password="1006dnfL"
 		name="jdbc/Oracle11g"

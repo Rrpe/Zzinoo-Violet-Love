@@ -54,6 +54,49 @@ public class signFrontController extends HttpServlet {
 	private void actionSign(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("actionSign");
 		
+		request.setCharacterEncoding("EUC-KR");
+		
+		String viewPage = null;
+		BCommand command = null;
+		
+		String uri = request.getRequestURI();
+		String conPath = request.getContextPath();
+		String com = uri.substring(conPath.length());
+
+		if(com.equals("/sign.sign")) {
+			viewPage = "write_view.jsp";
+		} else if(com.equals("/write.do")) {
+			command = new BWriteCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+		} else if(com.equals("/list.do")) {
+			command = new BListCommand();
+			command.execute(request, response);
+			viewPage = "list.jsp";
+		} else if(com.equals("/content_view.do")){
+			command = new BContentCommand();
+			command.execute(request, response);
+			viewPage = "content_view.jsp";
+		} else if(com.equals("/modify.do")) {
+			command = new BModifyCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+		} else if(com.equals("/delete.do")) {
+			command = new BDeleteCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+		} else if(com.equals("/reply_view.do")) {
+			command = new BReplyViewCommand();
+			command.execute(request, response);
+			viewPage = "reply_view.jsp";
+		} else if(com.equals("/reply.do")) {
+			command = new BReplyCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+		}
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+		dispatcher.forward(request, response);
 		
 	}
 
