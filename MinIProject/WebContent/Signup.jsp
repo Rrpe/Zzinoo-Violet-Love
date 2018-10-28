@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!doctype html>
 <html lang="en">
@@ -24,7 +24,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin-top: 100px;
+	margin-top: 50px;
 	color: #ffffff;
 }
 
@@ -48,28 +48,28 @@ location.href = "Login.jsp";
 			<h2>Violet Love 회원가입</h2>
 			<p class="lead">Violet Love에 오신걸 환영합니다. Violet Love의 뜻은 뒤질때까지 사랑하라는 뜻입니다 ༼ つ ◕_◕ ༽つ </p>
 		</div>
-		<h2 align="center" class="mb-3">회원가입 정보</h2>
 		<hr>
-		<form class="needs-validation" novalidate>
+		<h3 align="center" class="mb-3">회원가입 정보</h3>
+		<form class="form-signin" action="sign.sign">
 			<div class="row">
-				<label for="firstName">성명</label><input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+				<label for="userID">아이디</label> <input type="text" class="form-control" id="userID" placeholder="ID" required>
 				<br>
-				<label for="address2">비밀번호</label><input type="password" class="form-control" id="password">
+				<label for=password>비밀번호</label><input type="password" class="form-control" id="password" placeholder="password" required>
+				<br>
+				<label for="firstName">이름</label><input type="text" class="form-control" id="firstName" placeholder="이름" required>
 				<br>
 				<label for="username">닉네임</label> <input type="text" class="form-control" id="username" placeholder="닉네임" required>
 				<br>
-				<label for="email">이메일</label> <input type="email" class="form-control" id="email" placeholder="아이디@도메인.com">
-				<br>
-				<label for="address">주소</label> <input type="text" class="form-control" id="address" placeholder="주소" required>
+				<label for="inputEmail">이메일</label> <input type="email" class="form-control" id="inputEmail" placeholder="아이디@도메인.com" required autofocus>
 				<br>
 				<hr class="mb-4">
-				<table style="width: 90%;" align="center">
+				<table align="center">
 					<tr>
 						<td align="center">
-							<button style="width: 90%;"class="btn btn-primary btn-lg btn-block" type="submit">회원가입 완료</button>
+							<button class="btn btn-primary btn-lg btn-block" type="submit">회원가입 완료</button>
 						</td>
 						<td align="center">
-							<button onclick="page_href()" style="width: 90%;"class="btn btn-primary btn-lg btn-block" type="button">로그인 창으로</button>
+							<button onclick="page_href()" class="btn btn-primary btn-lg btn-block" type="button">로그인 창으로</button>
 						</td>
 					</tr>
 				</table>
