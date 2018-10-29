@@ -69,17 +69,17 @@
 				<p class="lead">Violet Love에 오신걸 환영합니다. Violet Love의 뜻은 뒤질때까지 사랑하라는 뜻입니다 ༼ つ ◕_◕ ༽つ </p>
 			</div>
 			<hr>
-			<form class="form-signin">
+			<form class="form-signin" action="main.sign" method="post">
 			<div class="row">
 				<!-- 큰 메세지 부분 -->
 				<h1 class="h3 mb-3 font-weight-normal" style="color: #ffffff; font-weight: 700;">Please Sign In</h1>
 				<!-- 로그인 아이디 부분 -->
 				<label for="userID" class="sr-only">아이디</label>
-				<input type="text" class="form-control" id="userID" placeholder="ID" required>
+				<input type="text" class="form-control" name="userID" placeholder="ID" required>
 				<br>
 				<!-- 로그인 패스워드 부분 -->
 				<label for="inputPassword" class="sr-only">Password</label>
-				<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				<input type="password" name="userPWD" class="form-control" placeholder="Password" required>
 				<br>
 			</div>
 			<div class="checkbox mb-3">

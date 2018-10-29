@@ -32,7 +32,24 @@
 </style>
 
 </head>
-
+<script type="text/javascript">
+function readURL(input) {
+	 
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+ 
+        reader.onload = function (e) {
+            $('#image_section').attr('src', e.target.result);
+        }
+ 
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+ 
+$("#imgInput").change(function(){
+    readURL(this);
+});
+</script>
 <body>
 	<div class="container">
 		<header class="blog-header py-3">

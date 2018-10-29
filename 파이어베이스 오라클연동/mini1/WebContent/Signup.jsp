@@ -50,17 +50,17 @@ location.href = "Login.jsp";
 		</div>
 		<hr>
 		<h3 align="center" class="mb-3">회원가입 정보</h3>
-		<form class="form-signin" action="sign.sign">
+		<form class="form-signin" action="sign.sign" method="post">
 			<div class="row">
-				<label for="userID">아이디</label> <input type="text" class="form-control" id="userID" placeholder="ID" required>
+				<label for="userID">아이디</label> <input type="text" class="form-control" name="userID" placeholder="ID" required>
 				<br>
-				<label for=password>비밀번호</label><input type="password" class="form-control" id="password" placeholder="password" required>
+				<label for=password>비밀번호</label><input type="password" class="form-control" name="userPWD" placeholder="password" required>
 				<br>
-				<label for="firstName">이름</label><input type="text" class="form-control" id="firstName" placeholder="이름" required>
+				<label for="firstName">이름</label><input type="text" class="form-control" name="userNAME" placeholder="이름" required>
 				<br>
-				<label for="username">닉네임</label> <input type="text" class="form-control" id="username" placeholder="닉네임" required>
+				<label for="username">닉네임</label> <input type="text" class="form-control" name="userNICNAME" placeholder="닉네임" required>
 				<br>
-				<label for="inputEmail">이메일</label> <input type="email" class="form-control" id="inputEmail" placeholder="아이디@도메인.com" required autofocus>
+				<label for="inputEmail">이메일</label> <input type="email" class="form-control" name="userEMAIL" placeholder="아이디@도메인.com" required autofocus>
 				<br>
 				<hr class="mb-4">
 				<table align="center">
