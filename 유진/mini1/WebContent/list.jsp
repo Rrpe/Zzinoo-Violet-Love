@@ -71,20 +71,25 @@
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>번호</th>
+						<th>사진</th>
 						<th>이름</th>
 						<th>제목</th>
 						<th>날짜</th>
 						<th>히트</th>
 					</tr>
 					<c:forEach items="${list}" var="dto">
+					<!-- <img src="C:\Users\lg\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\mini1\upload
+					\${dto.Namee}"/> -->
 					<tr>
+					
+					<td><img src="/image/${dto.namee}"/></td>
+					
 						<td>${dto.bId}</td>
 						<td>${dto.bName}</td>
 						<td><c:forEach begin="1" end="${dto.bIndent}">-</c:forEach>
 							<a href="content_view.do?bId=${dto.bId}">${dto.bTitle}</a></td>
 						<td>${dto.bDate}</td>
-						<td>${dto.bHit}</td>
+						<td>${dto.bHit}</td>					
 					</tr>
 					</c:forEach>
 					<tr>
