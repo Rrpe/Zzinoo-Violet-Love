@@ -87,7 +87,7 @@ $("#imgInput").change(function(){
 		<div style="margin-bottom: 100px" class="container"></div>
 		<div class="table-responsive">
 		<table align="center" class="table">
-		<form action="write.do" method="post">
+		<form action="write.do" method="post" enctype="Multipart/form-data">
 			<tr>
 				<td> 이름 </td>
 				<td> <input type="text" name="bName" size = "50"> </td>
@@ -99,6 +99,10 @@ $("#imgInput").change(function(){
 			<tr>
 				<td> 내용 </td>
 				<td> <textarea name="bContent" class="form-control" rows="3" cols="3" ></textarea> </td>
+			</tr>
+			<tr>
+				<td> 파일명 </td>
+				<td> <input type="file" name="fileName" /></td>
 			</tr>
 			<tr >
 				<td colspan="2"> <input type="submit" value="입력"> &nbsp;&nbsp; <a href="list.do">목록보기</a></td>

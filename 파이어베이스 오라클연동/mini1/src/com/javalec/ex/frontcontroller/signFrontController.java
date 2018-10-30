@@ -65,9 +65,9 @@ public class signFrontController extends HttpServlet {
 		}else if(com.equals("/main.sign")) {
 			command = new SignBooleanCommand();
 			command.execute(request, response);
-			viewPage = "Main.jsp";
+
+
 		}
-		
 		
 		
 		
@@ -101,9 +101,10 @@ public class signFrontController extends HttpServlet {
 //			command.execute(request, response);
 //			viewPage = "list.do";
 //		}
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
-		dispatcher.forward(request, response);
+		if(viewPage != null) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+			dispatcher.forward(request, response);
+		}
 		
 	}
 

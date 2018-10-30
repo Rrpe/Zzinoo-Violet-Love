@@ -15,7 +15,18 @@ public class SignBooleanCommand implements SignCommand{
 		String userPWD = request.getParameter("userPWD");
 		
 		SignDao dao = new SignDao();
-		dao.Check(userID, userPWD);
+		boolean check;
+		check = dao.Check(userID, userPWD);
+		
+		if(check == true) {
+			System.out.println("Login succeed");
+			String viewPage = null;
+			viewPage = "Main.jsp";
+		}else {
+			System.out.println("Login fail");
+			String viewPage = null;
+			viewPage = "Login.jsp";
+		}
 	}
 
 }

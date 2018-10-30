@@ -28,7 +28,7 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 		}
 	}
 	
-	public void write(String bName, String bTitle, String bContent) {
+	public void write(String bName, String bTitle, String bContent, String Namee) {
 		// TODO Auto-generated method stub
 		
 		Connection connection = null;
@@ -36,11 +36,14 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 		
 		try {
 			connection = dataSource.getConnection();
-			String query = "insert into mvc_board (bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent) values (mvc_board_seq.nextval, ?, ?, ?, 0, mvc_board_seq.currval, 0, 0 )";
+			String query = "insert into mvc_board (bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent, Namee) values (mvc_board_seq.nextval, ?, ?, ?, 0, mvc_board_seq.currval, 0, 0 , ?)";
 			preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setString(1, bName);
 			preparedStatement.setString(2, bTitle);
 			preparedStatement.setString(3, bContent);
+			preparedStatement.setString(4, Namee);
+			 
+			
 			int rn = preparedStatement.executeUpdate();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -67,7 +70,7 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 		try {
 			connection = dataSource.getConnection();
 			
-			String query = "select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent from mvc_board order by bGroup desc, bStep asc";
+			String query = "select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, Namee from mvc_board order by bGroup desc, bStep asc";
 			preparedStatement = connection.prepareStatement(query);
 			resultSet = preparedStatement.executeQuery();
 			
@@ -81,8 +84,9 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 				int bGroup = resultSet.getInt("bGroup");
 				int bStep = resultSet.getInt("bStep");
 				int bIndent = resultSet.getInt("bIndent");
+				String Namee = resultSet.getString("Namee");
 				
-				BDto dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent);
+				BDto dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, Namee);
 				dtos.add(dto);
 			}
 			
@@ -131,8 +135,9 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 				int bGroup = resultSet.getInt("bGroup");
 				int bStep = resultSet.getInt("bStep");
 				int bIndent = resultSet.getInt("bIndent");
+				String Namee = resultSet.getString("Namee");
 				
-				dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent);
+				dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, Namee);
 			}
 			
 		} catch (Exception e) {
@@ -233,8 +238,9 @@ public class BDao {  // DAO 데이터베이스에 접근하여 작업을 해준다
 				int bGroup = resultSet.getInt("bGroup");
 				int bStep = resultSet.getInt("bStep");
 				int bIndent = resultSet.getInt("bIndent");
+				String Namee = resultSet.getString("Namee");
 				
-				dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent);
+				dto = new BDto(bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, Namee);
 			}
 			
 		} catch (Exception e) {

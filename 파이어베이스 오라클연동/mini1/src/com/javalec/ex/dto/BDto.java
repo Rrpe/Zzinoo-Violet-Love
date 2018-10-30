@@ -13,12 +13,13 @@ public class BDto {  // DTO 데이터베이스에서 데이터를 가져오는 부분 (해당 테이블
 	int bGroup;
 	int bStep;
 	int bIndent;
+	String Namee;
 	
 	public BDto() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep, int bIndent) {
+	public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep, int bIndent, String Namee) {
 		// TODO Auto-generated constructor stub
 		this.bId = bId;
 		this.bName = bName;
@@ -29,8 +30,17 @@ public class BDto {  // DTO 데이터베이스에서 데이터를 가져오는 부분 (해당 테이블
 		this.bGroup = bGroup;
 		this.bStep = bStep;
 		this.bIndent = bIndent;
+		this.Namee = Namee;
 	}
 
+	public String getNamee() {
+		return Namee;
+	}
+
+	public void setNamee(String Namee) {
+		this.Namee = Namee;
+	}
+	
 	public int getbId() {
 		return bId;
 	}
