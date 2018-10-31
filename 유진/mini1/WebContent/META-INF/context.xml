@@ -23,10 +23,15 @@
 		on session expiration as well as webapp lifecycle) -->
 	<!-- <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" 
 		/> -->
-	<Resource maxWait="1000" maxActive="50"
-		type="javax.sql.DataSource" name="jdbc/Oracle11g" password="0404"
-		username="SYSTEM"
+	<Resource
+		auth="Container"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
 		url="jdbc:oracle:thin:SYSTEM/0404@localhost:1521:orcl"
-		driverClassName="oracle.jdbc.driver.OracleDriver" auth="Container">
+		username="SYSTEM"
+		password="0404"
+		name="jdbc/Oracle11g"
+		type="javax.sql.DataSource"
+		maxActive="50"
+		maxWait="1000">
 	</Resource>
 </Context>
