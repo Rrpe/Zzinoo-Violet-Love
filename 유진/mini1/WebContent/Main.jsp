@@ -30,9 +30,15 @@ ul, li {
 }
 
 body{
-	background-image: url("image/capture(2).png")
+	background-image: url("image/배경1.png");
+	background-size: 100%;
+
 
 }
+.titlecolor{color: #EAEAEA;}
+.titlecolor:hover{color:#C170EA;}
+.innercolor{color:#BDBDBD;}
+.innercolor:hover{color:#C170EA;}
 </style>
 
 
@@ -56,13 +62,13 @@ function javascript(){
 		<header class="blog-header py-3">
 			<div class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 text-center" align="center">
-					<a class="blog-header-logo text-dark" href="Main.jsp"><h1>Violet Love</h1>
+					<a class="titlecolor" href="Main.jsp"><h1>Violet Love</h1>
 					</a>
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
 
-					<a class="btn btn-sm btn-outline-secondary" href="Login.jsp">login</a>&nbsp;
-					<a class="btn btn-sm btn-outline-secondary" href="Signup.jsp">signup</a>
+					<a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
+					<a class="titlecolor" href="Signup.jsp">signup</a>
 				</div>
 			</div>
 		</header>
@@ -70,24 +76,27 @@ function javascript(){
 		<div class="nav-scroller py-1 mb-2" align="center">
 			<nav class="nav d-flex justify-content-between">
 				<table>
-					<a class="p-2 text-muted" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					
 				</table>
 			</nav>
 		</div>
 		<hr class="my-hr1">
-		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-image: url(image/capture(2).png)">
+		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-color:rgba(255,255,255, 0.5);">
 			<h1 class="display-4"></h1>
 			<div class="row mb-2">
 				<div class="col-md-6">
 					<div class="card flex-md-row mb-4 shadow-sm h-md-250">
 						<div class="card-body d-flex flex-column align-items-start">
-							<h3 class="mb-0">hello</h3>
+							<h3 class="mb-0">LOVE</h3><br><br>
 								<p>
+								Hatred paralyzes life; love releases it. <br>
+								Hatred confuses life; love harmonizes it. <br>
+								Hatred darkens life; love illumines it. <br>
 								</p>
 						</div>
 					</div>
@@ -98,8 +107,8 @@ function javascript(){
 							var i = 0;
 							var path = new Array();
 							// LIST OF IMAGES 
-							path[0] = "image/커플사진1.png";
-							path[1] = "image/커플사진2.png";
+							path[0] = "image/고양이커플.png";
+							path[1] = "image/커플사진1.png";
 							path[2] = "image/커플사진3.png";
 							path[3] = "image/커플사진4.png";
 							function swapImage() {
@@ -112,7 +121,7 @@ function javascript(){
 							}
 							window.onload = swapImage;
 						</script>
-						<img height="350" name="slide" src="image/capture(2).png" width="500" />
+						<img height="75%" name="slide" src="image/capture(2).png" width="90%" />
 				</div>
 			</div>
 		</div>
@@ -121,26 +130,20 @@ function javascript(){
 	
 	<!-- <main div다 들어감> -->
 	<main role="main" class="container">
+	<center>
 		<div class="row">
 			<div class="col-md-8 blog-main">
 				<div class="blog-post">
-					<div style="overflow: auto;">
-						<img src="image/힘내요인절미.jpg"><br>
+					<div style="overflow-y: scroll; height:500px;">
+						<img src="image/유진진자라.png" height="300" width="300"><br>
+						<img src="image/준수오빠.png" height="300" width="300"><br>
+						<img src="image/보라언니.png" height="300" width="300"><br>
+						<img src="image/홍일오빠.png" height="300" width="300"><br>
 					</div>
 				</div>
 			</div>
-			<aside class="col-md-4 blog-sidebar">
-				<div class="p-3 mb-3 bg-light rounded">
-					<h4 class="font-italic">D-day</h4>
-					<p>400일 D-26</p>
-					<p>500일 D-126</p>
-					<p>600일 D-226</p><br><br><br>
-				</div>
-				<div class="p-3">
-					
-				</div>
-			</aside>
 		</div>
+		</center>
 	</main>
 	<footer class="my-5 pt-5 text-muted text-center text-small" style="margin-top: 100px">
 	<br>
