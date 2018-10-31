@@ -23,131 +23,29 @@ ul, li {
 	list-style: none;
 }
 
-#slide {
-	height: 300px;
-	position: relative;
-	overflow: hidden;
-}
-
-#slide ul {
-	width: 400%;
-	height: 100%;
-	transition: 1s;
-}
-
-#slide ul:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-#slide li {
-	float: left;
-	width: 25%;
-	height: 100%;
-}
-
-#slide li:nth-child(1) {
-	background-image: url("image/noname01.bmp")
-}
-
-#slide li:nth-child(2) {
-	background: #ffa;
-}
-
-#slide li:nth-child(3) {
-	background: #faF;
-}
-
-#slide li:nth-child(4) {
-	background: #aaf;
-}
-
-#slide input {
-	display: none;
-}
-
-#slide label {
-	display: inline-block;
-	vertical-align: middle;
-	width: 10px;
-	height: 10px;
-	border: 2px solid #666;
-	background: #fff;
-	transition: 0.3s;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-#slide .pos {
-	text-align: center;
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
-
-#pos1:checked ~ul {
-	margin-left: 0%;
-}
-
-#pos2:checked ~ul {
-	margin-left: -100%;
-}
-
-#pos3:checked ~ul {
-	margin-left: -200%;
-}
-
-#pos4:checked ~ul {
-	margin-left: -300%;
-}
-
-#pos1:checked ~.pos>label:nth-child(1) {
-	background: #666;
-}
-
-#pos2:checked ~.pos>label:nth-child(2) {
-	background: #666;
-}
-
-#pos3:checked ~.pos>label:nth-child(3) {
-	background: #666;
-}
-
-#pos4:checked ~.pos>label:nth-child(4) {
-	background: #666;
-}
-
 .my-hr1 {
 	border: 4;
 	height: 1px;
 	background: #ccc;
 }
+
+body{
+	background-image: url("image/capture(2).png")
+
+}
 </style>
 
 
 <script type="text/javascript">
-	function page_href() {
-
-		location.href = "Login.jsp";/////////////////// Search
-
-	}
-</script>
-
-<script language="javascript">
-//버튼클릭시 javascript 호출합니다.
 function javascript(){
- 
     //팝업창출력
     //width : 300px크기
     //height : 300px크기
     //top : 100px 위의 화면과 100px 차이해서 위치
     //left : 100px 왼쪽화면과 100px 차이해서 위치
     //툴바 X, 메뉴바 X, 스크롤바 X , 크기조절 X
-    window.open('레이어팝업2.jsp','popName',
-                'width=300,height=300,top=100,left=100,toolbar=no,menubar=no,scrollbars=no,resizable=no,status=no');
+    window.open('레이어팝업2.jsp','popName','width=300,height=300,top=100,left=100,toolbar=no,menubar=no,scrollbars=no,resizable=no,status=no');
+    
 }
 </script>
 </head>
@@ -182,41 +80,39 @@ function javascript(){
 			</nav>
 		</div>
 		<hr class="my-hr1">
-		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-color: #D2D2FF">
+		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-image: url(image/capture(2).png)">
 			<h1 class="display-4"></h1>
 			<div class="row mb-2">
 				<div class="col-md-6">
 					<div class="card flex-md-row mb-4 shadow-sm h-md-250">
 						<div class="card-body d-flex flex-column align-items-start">
-							<h3 class="mb-0"><a class="text-dark" href="#">Closer</a></h3>
-								<p>So baby pull me closer in the backseat of your Rover
-									That I know you can't afford Bite that tattoo on your
-									shoulder Pull the sheets right off the corner Of the mattress
-									that you stole From your roommate back in Boulder We ain't
-									ever getting older
+							<h3 class="mb-0">hello</h3>
+								<p>
 								</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="card flex-md-row mb-4 shadow-sm h-md-250">
-						<div id="slide">
-							<input type="radio" name="pos" id="pos1" checked>
-							<input type="radio" name="pos" id="pos2">
-							<input type="radio" name="pos" id="pos3">
-							<input type="radio" name="pos" id="pos4">
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-							<p class="pos">
-								<label for="pos1"></label> <label for="pos2"></label>
-								<label for="pos3"></label> <label for="pos4"></label>
-							</p>
-						</div>
-					</div>
+					
+					<script language="JavaScript"> 
+							var i = 0;
+							var path = new Array();
+							// LIST OF IMAGES 
+							path[0] = "image/커플사진1.png";
+							path[1] = "image/커플사진2.png";
+							path[2] = "image/커플사진3.png";
+							path[3] = "image/커플사진4.png";
+							function swapImage() {
+								document.slide.src = path[i];
+								if (i < path.length - 1)
+									i++;
+								else
+									i = 0;
+								setTimeout("swapImage()", 2000);
+							}
+							window.onload = swapImage;
+						</script>
+						<img height="350" name="slide" src="image/capture(2).png" width="500" />
 				</div>
 			</div>
 		</div>
@@ -238,34 +134,17 @@ function javascript(){
 					<h4 class="font-italic">D-day</h4>
 					<p>400일 D-26</p>
 					<p>500일 D-126</p>
-					<p>600일 D-226</p>
+					<p>600일 D-226</p><br><br><br>
 				</div>
 				<div class="p-3">
-					<h4 class="font-italic">Buket List</h4>
-					<ol class="list-unstyled mb-0">
-						<li>소라언니 놀리기</li>
-						<li>홍일이 오빠 놀리기</li>
-						<li>준수오빠 놀리기</li>
-						<li>롤하고싶당</li>
-						<li>비누랑 산책가기</li>
-						<li>살빠지면 좋겠다</li>
-						<li>자바스크립트 마스터</li>
-					</ol>
-				</div>
-				<div class="p-3">
-					<h4 class="font-italic">Elsewhere</h4>
-					<ol class="list-unstyled">
-						<li><a href="#">GitHub</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-					</ol>
+					
 				</div>
 			</aside>
 		</div>
 	</main>
 	<footer class="my-5 pt-5 text-muted text-center text-small" style="margin-top: 100px">
 	<br>
-		<p class="mb-1">&copy; 홍일 소라 유진 준수</p>
+		<p class="mb-1">&copy; Zzinu team</p>
 		<ul class="list-inline">
 			<li class="list-inline-item"><a href="#">Privacy</a></li>
 			<li class="list-inline-item"><a href="#">Terms</a></li>
@@ -273,7 +152,7 @@ function javascript(){
 		</ul>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
-	<script>window.jQuery|| document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	<script>window.jQuery|| document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
 	<script src="js/vendor/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/vendor/holder.min.js"></script>
