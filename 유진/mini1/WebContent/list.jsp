@@ -82,7 +82,7 @@
 					\${dto.Namee}"/> -->
 					<tr>
 					
-					<td><img src="/image/${dto.namee}"/></td>
+					<td><img src="/mini1/image/${dto.namee}"/></td>
 					
 						<td>${dto.bId}</td>
 						<td>${dto.bName}</td>

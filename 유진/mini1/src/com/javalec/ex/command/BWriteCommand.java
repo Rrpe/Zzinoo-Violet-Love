@@ -14,14 +14,15 @@ public class BWriteCommand implements BCommand {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		System.out.println("222222"+uploadPath);
+		
 		String bName ="";
 		String bTitle = "";
 		String bContent = "";
 		
 		String uploadPath = request.getRealPath("/image/");
 		
-		String Path = "http://localhost:8181/mini1/image";
+		String Path = "http://localhost:8080/mini1/image";
+		System.out.println("2222222222"+uploadPath);
 		String originalName1 = "";
 		String fileName = ""; // 중복처리된 이름
 
