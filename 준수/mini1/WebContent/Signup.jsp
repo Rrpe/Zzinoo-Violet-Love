@@ -18,14 +18,13 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 
-.bg-light {
-	background: url(image/akfajflqorud.jpg) no-repeat center center fixed; 
+body {
+	background: url("image/배경1.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	margin-top: 50px;
-	color: #ffffff;
 }
 
 .row {
@@ -37,49 +36,50 @@
 <script type="text/javascript">
 function page_href() {
 
-location.href = "Login.jsp";
+	location.href = "Login.jsp";
 
 }
 </script>
 </head>
+
 <body class="bg-light">
 	<div class="container">
-		<div class="py-5 text-center">
+	
+		<div class="py-5 text-center" style="color: #ffffff; font-weight: 700;">
 			<h2>Violet Love 회원가입</h2>
 			<p class="lead">Violet Love에 오신걸 환영합니다. Violet Love의 뜻은 뒤질때까지 사랑하라는 뜻입니다 ༼ つ ◕_◕ ༽つ </p>
 		</div>
+		
 		<hr>
-		<h3 align="center" class="mb-3">회원가입 정보</h3>
+		<h3 align="center" class="mb-3" style="color: #ffffff; font-weight: 700;">회원가입 정보</h3>
 		<form class="form-signin" action="sign.sign" method="post">
 			<div class="row">
-				<label for="userID">아이디</label> <input type="text" class="form-control" name="userID" placeholder="ID" required>
-				<br>
-				<label for=password>비밀번호</label><input type="password" class="form-control" name="userPWD" placeholder="password" required>
-				<br>
-				<label for="firstName">이름</label><input type="text" class="form-control" name="userNAME" placeholder="이름" required>
-				<br>
-				<label for="username">닉네임</label> <input type="text" class="form-control" name="userNICNAME" placeholder="닉네임" required>
-				<br>
-				<label for="inputEmail">이메일</label> <input type="email" class="form-control" name="userEMAIL" placeholder="아이디@도메인.com" required autofocus>
-				<br>
-				<hr class="mb-4">
-				<table align="center">
-					<tr>
-						<td align="center">
-							<button class="btn btn-primary btn-lg btn-block" type="submit">회원가입 완료</button>
-						</td>
-						<td align="center">
-							<button onclick="page_href()" class="btn btn-primary btn-lg btn-block" type="button">로그인 창으로</button>
-						</td>
-					</tr>
-				</table>
+				<div class="row">
+					<label for="userID" style="color: #ffffff; font-weight: 500;">아이디</label> <input type="text" class="form-control" name="userID" placeholder="ID" required>
+					<br>
+					<label for=password style="color: #ffffff; font-weight: 500;">비밀번호</label><input type="password" class="form-control" name="userPWD" placeholder="password" required>
+					<br>
+					<label for="firstName" style="color: #ffffff; font-weight: 500;">이름</label><input type="text" class="form-control" name="userNAME" placeholder="이름" required>
+					<br>
+					<label for="username" style="color: #ffffff; font-weight: 500;">닉네임</label> <input type="text" class="form-control" name="userNICNAME" placeholder="닉네임" required>
+					<br>
+					<label for="inputEmail" style="color: #ffffff; font-weight: 500;">이메일</label> <input type="email" class="form-control" name="userEMAIL" placeholder="아이디@도메인.com" required autofocus>
+					<br>
+					<hr class="mb-4">
+				
+					<div class="buttonmode">
+						<button class="btn btn-lg btn-primary btn-block" type="submit" style="background-color: rgba(50, 50, 255, 0.5);">회원가입 완료</button>
+						<button class="btn btn-lg btn-primary btn-block" type="button" onclick="page_href()" style="background-color: rgba(50, 50, 255, 0.5);">로그인 창으로</button>
+					</div>
+				</div>
 			</div>
 		</form>
 	</div>
+	
 	<footer class="my-5 pt-5 text-muted text-center text-small">
 	<br>
-		<p class="mb-1">&copy; 홍일 소라 유진 준수</p>
-		<ul class="list-inline">
+		<p class="mb-1" style="color: #ffffff; font-weight: 700;">&copy; 홍일 소라 유진 준수</p>
+		<ul class="list-inline" style="font-weight: 700;">
 			<li class="list-inline-item"><a href="#">Privacy</a></li>
 			<li class="list-inline-item"><a href="#">Terms</a></li>
 			<li class="list-inline-item"><a href="#">Support</a></li>

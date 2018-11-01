@@ -254,45 +254,107 @@
    cursor: default;
    color: #777;
 }
+.my-hr1 {
+	border: 4;
+	height: 1px;
+	background: #ccc;
+}
+
+body {
+	background: url("image/배경1.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: 50px;
+}
+/* 제목이랑 로그인 회원가입 */
+.titlecolor {
+	color: #EAEAEA;
+	font-size: 100%
+}
+
+.titlecolor:hover {
+	color: #C170EA;
+	text-decoration: none !important;
+}
+/* 메뉴바  */
+.innercolor {
+	color: #BDBDBD;
+	font-size: 120%;
+}
+
+.innercolor:hover {
+	color: #C170EA;
+}
+/* 버튼 투명화시키고 이미지 넣음 */
+.aaa {
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: transparent;
+	border: none;
+	color: #FFFFFF;
+}
+/* 메뉴바 위치 */
+#headdddd ul {
+	margin-left: 30%;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.food{color:#E8D9FF;}
+
+.titlecolor{color: #EAEAEA;}
+.titlecolor:hover{color:#C170EA;text-decoration:none !important;}
+.innercolor{color:#BDBDBD;}
+.innercolor:hover{color:#C170EA;text-decoration:none !important;}
+.menucolor{
+   background-color:rgba(30, 50, 105, 0.8);
+}
 </style>
+
 
 </head>
 <body>
-   <div class="container">
-      <header class="blog-header py-3">
-         <div
-            class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 text-center" align="center">
-               <a class="blog-header-logo text-dark" href="Main.jsp">
-                  <h1>Violet Love</h1>
-               </a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-					<a class="btn btn-sm btn-outline-secondary" href="Login.jsp">login</a>&nbsp;
-					<a class="btn btn-sm btn-outline-secondary" href="Signup.jsp">signup</a>
+  <div class="container">
+		<header class="blog-header py-3">
+			<div class="row flex-nowrap justify-content-between align-items-center">
+				<div class="col-4 text-center" align="center">
+					<br><br> 
+					<a class="titlecolor" href="Main.jsp"><p style="font-size: 300%">Violet Love</p></a>
 				</div>
-         </div>
-      </header>
-   </div>
-   <hr class="my-hr1">
-   <div class="nav-scroller py-1 mb-2" align="center">
-      <nav class="nav d-flex justify-content-between">
-         <table>
-           <a class="p-2 text-muted" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
-         </table>
-      </nav>
-   </div>
+				<div class="col-4 d-flex justify-content-end align-items-center">
+					&nbsp; &nbsp;&nbsp;&nbsp; 
+					<a class="titlecolor" href="Login.jsp">login</a>
+					&nbsp;&nbsp;&nbsp;&nbsp; 
+					<a class="titlecolor" href="Signup.jsp">signup</a>
+				</div>
+			</div>
+		</header>
+		<hr class="my-hr1">
+	
+		<header id="headdddd">
+			<nav class="menucolor">
+				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span><img src="image/하트트.png"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
    <hr class="my-hr1">
 
 
-   <h3 class="pb-3 mb-4 font-italic border-bottom" align="center">
-      <b style="color: #B512F6">W</b>hich place do you want to go?<br>
-      <b style="color: #F12E5B">W</b>hat do you want to eat?<br> <b
-         style="color: #24D50A">L</b>et's searching about JMT cook!
+   <h3 class="food" align="center">
+  	  <b style="color: #B512F6">W</b>hich place do you want to go?<br>
+      <b style="color: #F12E5B">W</b>hat do you want to eat?<br>
+      <b style="color: #24D50A">L</b>et's searching about JMT cook!<br><br>
 
    </h3>
 
@@ -607,7 +669,32 @@
    </div>
    <br>
    <br>
-   <br>
+   <footer class="my-5 pt-5 text-muted text-center text-small">
+	<br>
+		<p class="mb-1" style="color: #ffffff; font-weight: 700;">&copy; 홍일 소라 유진 준수</p>
+		<ul class="list-inline" style="font-weight: 700;">
+			<li class="list-inline-item"><a href="#">Privacy</a></li>
+			<li class="list-inline-item"><a href="#">Terms</a></li>
+			<li class="list-inline-item"><a href="#">Support</a></li>
+		</ul>
+	</footer>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')
+	</script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vendor/holder.min.js"></script>
+	<script>
+		Holder.addTheme('thumb', {
+			bg : '#55595c',
+			fg : '#eceeef',
+			text : 'Thumbnail'
+		});
+	</script>
 </html>
