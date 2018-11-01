@@ -78,6 +78,8 @@ body {
 					&nbsp;
 					<a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp;
 					&nbsp; &nbsp; &nbsp;
+					<a class="innercolor" onclick='javascript()' value='¹öÆ°'>Random
+						mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp;
 					&nbsp; &nbsp; &nbsp;
 

@@ -35,6 +35,7 @@ body {
 
 .titlecolor {
 	color: #EAEAEA;
+	font-size: 100%
 }
 
 .titlecolor:hover {
@@ -44,26 +45,26 @@ body {
 
 .innercolor {
 	color: #BDBDBD;
-	
+	font-size: 120%;
 }
 
 .innercolor:hover {
 	color: #C170EA;
-	text-decoration: none !important;
 }
 
-.aaa{
-    background-color: transparent !important;
-    background-image: none !important;
-    border-color: transparent;
-    border: none;
-    color: #FFFFFF;
+.aaa {
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: transparent;
+	border: none;
+	color: #FFFFFF;
 }
 
-#headdddd ul{
-	margin-left: 27%;
+#headdddd ul {
+	margin-left: 22%;
+	list-style: none;
+	margin-bottom: 20px;
 }
-
 </style>
 
 
@@ -92,13 +93,11 @@ body {
 			<div
 				class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 text-center" align="center">
-					<a class="titlecolor" href="Main.jsp"><h1>Violet Love</h1> </a>
+					<br>
+					<br> <a class="titlecolor" href="Main.jsp"><p style="font-size:300%">Violet Love</p></a>
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
-				
-					&nbsp; &nbsp;&nbsp; &nbsp;
-
-					<a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
+					&nbsp; &nbsp;&nbsp; &nbsp; <a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
 					<a class="titlecolor" href="Signup.jsp">signup</a>
 				</div>
 			</div>
@@ -106,39 +105,33 @@ body {
 		<hr class="my-hr1">
 
 
-		 <header id="headdddd">		
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="aaa" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span><img src="image/유니콘콘.png"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-             <a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp;
-					&nbsp; &nbsp; </a>
-            </li>
-            <li class="nav-item">
-             <a class="innercolor" href="list.do">Story</a>&nbsp; &nbsp; &nbsp;
-					&nbsp;
-            </li>
-            <li class="nav-item">
-             <a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp;
-					&nbsp; &nbsp; &nbsp;
-            </li>
-             <li class="nav-item">
-             <a class="innercolor" onclick='javascript()' value='버튼'>Random
-						mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
-            </li>
-            <li class="nav-item">
-         <a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp;
-					&nbsp; &nbsp; &nbsp;
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-		
+		<header id="headdddd">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<button class="aaa" type="button" data-toggle="collapse"
+					data-target="#navbarCollapse" aria-controls="navbarCollapse"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span><img src="image/하트트.png"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><a class="innercolor"
+							href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp; </a></li>
+						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;
+							&nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory
+								map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor"
+							onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp;
+							&nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor"
+							href="minigame.jsp">Mini game</a>&nbsp; <br></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
 		<hr class="my-hr1">
+		
 		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark"
 			style="background-color: rgba(255, 255, 255, 0.5);">
 			<h1 class="display-4"></h1>
@@ -147,8 +140,7 @@ body {
 					<div class="card flex-md-row mb-4 shadow-sm h-md-250">
 						<div class="card-body d-flex flex-column align-items-start">
 							<h3 class="mb-0">LOVE</h3>
-							<br>
-							<br>
+							<br> <br>
 							<p>
 								When you are on a diet, the truth is you feel more painful
 								suppressing your desires to hug someone you love than that of

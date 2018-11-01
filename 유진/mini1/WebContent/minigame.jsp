@@ -107,6 +107,7 @@ function javascript(){
 					<a class="p-2 text-muted" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="p-2 text-muted" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="p-2 text-muted" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="p-2 text-muted" onclick='javascript()' value='¹öÆ°'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
 				</table>
 			</nav>
 		</div>

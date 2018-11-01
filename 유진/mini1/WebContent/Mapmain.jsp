@@ -298,6 +298,7 @@ body{
 					<a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="innercolor" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					<a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
 					
 				</table>
