@@ -30,6 +30,28 @@
 	height: 1px;
 	background: #ccc;
 }
+body {
+	background-image: url("image/배경1.png");
+	background-size: 100%;
+}
+
+.titlecolor {
+	color: #EAEAEA;
+}
+
+.titlecolor:hover {
+	color: #C170EA;
+	text-decoration: none !important;
+}
+
+.innercolor {
+	color: #BDBDBD;
+}
+
+.innercolor:hover {
+	color: #C170EA;
+	text-decoration: none !important;
+}
 </style>
 </head>
 <body>
@@ -37,11 +59,12 @@
 		<header class="blog-header py-3">
 			<div class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 text-center" align="center">
-					<a class="blog-header-logo text-dark" href="Main.jsp"><h1>Violet Love</h2></a>
+					<a class="titlecolor" href="Main.jsp"><h1>Violet Love</h1> </a>
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
-					<a class="btn btn-sm btn-outline-secondary" href="Login.jsp">login</a>&nbsp;
-					<a class="btn btn-sm btn-outline-secondary" href="Signup.jsp">signup</a>
+
+					<a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
+					<a class="titlecolor" href="Signup.jsp">signup</a>
 				</div>
 			</div>
 		</header>
@@ -49,11 +72,15 @@
 		<div class="nav-scroller py-1 mb-2" align="center">
 			<nav class="nav d-flex justify-content-between">
 				<table>
-					<a class="p-2 text-muted" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="p-2 text-muted" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp;
+					&nbsp; &nbsp;
+					<a class="innercolor" href="list.do">Story</a>&nbsp; &nbsp; &nbsp;
+					&nbsp;
+					<a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp;
+					&nbsp; &nbsp; &nbsp;
+					<a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp;
+					&nbsp; &nbsp; &nbsp;
+
 				</table>
 			</nav>
 		</div>
