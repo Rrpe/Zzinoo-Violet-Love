@@ -260,12 +260,44 @@
 	background: #ccc;
 }
 
-body{
+body {
 	background-image: url("image/배경1.png");
 	background-size: 100%;
-
-
 }
+/* 제목이랑 로그인 회원가입 */
+.titlecolor {
+	color: #EAEAEA;
+	font-size: 100%
+}
+
+.titlecolor:hover {
+	color: #C170EA;
+	text-decoration: none !important;
+}
+/* 메뉴바  */
+.innercolor {
+	color: #BDBDBD;
+	font-size: 120%;
+}
+
+.innercolor:hover {
+	color: #C170EA;
+}
+/* 버튼 투명화시키고 이미지 넣음 */
+.aaa {
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: transparent;
+	border: none;
+	color: #FFFFFF;
+}
+/* 메뉴바 위치 */
+#headdddd ul {
+	margin-left: 30%;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
 .food{color:#E8D9FF;}
 
 .titlecolor{color: #EAEAEA;}
@@ -281,29 +313,34 @@ body{
 		<header class="blog-header py-3">
 			<div class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 text-center" align="center">
-					<a class="titlecolor" href="Main.jsp"><h1>Violet Love</h1>
-					</a>
+					<br><br> 
+					<a class="titlecolor" href="Main.jsp"><p style="font-size: 300%">Violet Love</p></a>
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
-
-					<a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
+					&nbsp; &nbsp;&nbsp;&nbsp; 
+					<a class="titlecolor" href="Login.jsp">login</a>
+					&nbsp;&nbsp;&nbsp;&nbsp; 
 					<a class="titlecolor" href="Signup.jsp">signup</a>
 				</div>
 			</div>
 		</header>
 		<hr class="my-hr1">
-		<div class="nav-scroller py-1 mb-2" align="center">
-			<nav class="nav d-flex justify-content-between">
-				<table>
-					<a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="innercolor" href="list.do">Story</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="innercolor" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					<a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; &nbsp; &nbsp; &nbsp;
-					
-				</table>
+	
+		<header id="headdddd">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span><img src="image/하트트.png"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
+					</ul>
+				</div>
 			</nav>
-		</div>
+		</header>
    <hr class="my-hr1">
 
 
@@ -627,5 +664,22 @@ body{
    <br>
    <br>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')
+	</script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vendor/holder.min.js"></script>
+	<script>
+		Holder.addTheme('thumb', {
+			bg : '#55595c',
+			fg : '#eceeef',
+			text : 'Thumbnail'
+		});
+	</script>
 </html>

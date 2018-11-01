@@ -32,7 +32,7 @@ body {
 	background-image: url("image/배경1.png");
 	background-size: 100%;
 }
-
+/* 제목이랑 로그인 회원가입 */
 .titlecolor {
 	color: #EAEAEA;
 	font-size: 100%
@@ -42,7 +42,7 @@ body {
 	color: #C170EA;
 	text-decoration: none !important;
 }
-
+/* 메뉴바  */
 .innercolor {
 	color: #BDBDBD;
 	font-size: 120%;
@@ -51,7 +51,7 @@ body {
 .innercolor:hover {
 	color: #C170EA;
 }
-
+/* 버튼 투명화시키고 이미지 넣음 */
 .aaa {
 	background-color: transparent !important;
 	background-image: none !important;
@@ -59,7 +59,7 @@ body {
 	border: none;
 	color: #FFFFFF;
 }
-
+/* 메뉴바 위치 */
 #headdddd ul {
 	margin-left: 22%;
 	list-style: none;
@@ -81,57 +81,47 @@ body {
 						'레이어팝업2.jsp',
 						'popName',
 						'width=300,height=300,top=100,left=100,toolbar=no,menubar=no,scrollbars=no,resizable=no,status=no');
-
 	}
 </script>
 </head>
-
 <body>
 
 	<div class="container">
 		<header class="blog-header py-3">
-			<div
-				class="row flex-nowrap justify-content-between align-items-center">
+			<div class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 text-center" align="center">
-					<br>
-					<br> <a class="titlecolor" href="Main.jsp"><p style="font-size:300%">Violet Love</p></a>
+					<br><br> 
+					<a class="titlecolor" href="Main.jsp"><p style="font-size: 300%">Violet Love</p></a>
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
-					&nbsp; &nbsp;&nbsp; &nbsp; <a class="titlecolor" href="Login.jsp">login</a>&nbsp;&nbsp;&nbsp;
+					&nbsp; &nbsp;&nbsp;&nbsp; 
+					<a class="titlecolor" href="Login.jsp">login</a>
+					&nbsp;&nbsp;&nbsp;&nbsp; 
 					<a class="titlecolor" href="Signup.jsp">signup</a>
 				</div>
 			</div>
 		</header>
 		<hr class="my-hr1">
-
-
+	
 		<header id="headdddd">
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-				<button class="aaa" type="button" data-toggle="collapse"
-					data-target="#navbarCollapse" aria-controls="navbarCollapse"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span><img src="image/하트트.png"></span>
+				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span><img src="image/하트트.png"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active"><a class="innercolor"
-							href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp; </a></li>
-						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;
-							&nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory
-								map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor"
-							onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp;
-							&nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor"
-							href="minigame.jsp">Mini game</a>&nbsp; <br></li>
+						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 
 		<hr class="my-hr1">
-		
+
 		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark"
 			style="background-color: rgba(255, 255, 255, 0.5);">
 			<h1 class="display-4"></h1>
@@ -184,13 +174,38 @@ body {
 			<div class="col-md-8 blog-main">
 				<div class="blog-post">
 					<div style="overflow-y: scroll; height: 500px;">
-						<img src="image/유진진자라.png" height="300" width="300"><br>
-						<img src="image/준수오빠.png" height="300" width="300"><br>
-						<img src="image/보라언니.png" height="300" width="300"><br>
-						<img src="image/홍일오빠.png" height="300" width="300"><br>
+						
 					</div>
 				</div>
 			</div>
+			<aside class="col-md-4 blog-sidebar">
+				<div class="p-3 mb-3 bg-light rounded">
+					<h4 class="font-italic">D-day</h4>
+					<p>400일 D-26</p>
+					<p>500일 D-126</p>
+					<p>600일 D-226</p>
+				</div>
+				<div class="p-3">
+					<h4 class="font-italic">Buket List</h4>
+					<ol class="list-unstyled mb-0">
+						<li>소라언니 놀리기</li>
+						<li>홍일이 오빠 놀리기</li>
+						<li>준수오빠 놀리기</li>
+						<li>롤하고싶당</li>
+						<li>비누랑 산책가기</li>
+						<li>살빠지면 좋겠다</li>
+						<li>자바스크립트 마스터</li>
+					</ol>
+				</div>
+				<div class="p-3">
+					<h4 class="font-italic">Elsewhere</h4>
+					<ol class="list-unstyled">
+						<li><a href="#">GitHub</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+					</ol>
+				</div>
+			</aside>
 		</div>
 	</center>
 	</main>
