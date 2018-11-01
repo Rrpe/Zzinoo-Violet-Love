@@ -264,8 +264,12 @@
 }
 
 body {
-   background-image: url("image/배경1.png");
-   background-size: 100%;
+  	background: url("image/배경1.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: 50px;
 }
 /* 제목이랑 로그인 회원가입 */
 .titlecolor {
