@@ -65,6 +65,10 @@ body {
 	list-style: none;
 	margin-bottom: 20px;
 }
+.menucolor{
+
+	background-color:rgba(30, 50, 105, 0.8);
+}
 </style>
 
 
@@ -104,7 +108,7 @@ body {
 		<hr class="my-hr1">
 	
 		<header id="headdddd">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<nav class="menucolor">
 				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span><img src="image/하트트.png"></span>
 				</button>
@@ -112,7 +116,7 @@ body {
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">JMT map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" onclick='javascript()' value='버튼'>Random mission</a>&nbsp; &nbsp;&nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
 					</ul>
@@ -178,31 +182,15 @@ body {
 					</div>
 				</div>
 			</div>
+			
+			<!-- 오른쪽  -->
 			<aside class="col-md-4 blog-sidebar">
-				<div class="p-3 mb-3 bg-light rounded">
-					<h4 class="font-italic">D-day</h4>
-					<p>400일 D-26</p>
-					<p>500일 D-126</p>
-					<p>600일 D-226</p>
-				</div>
+			
 				<div class="p-3">
-					<h4 class="font-italic">Buket List</h4>
-					<ol class="list-unstyled mb-0">
-						<li>소라언니 놀리기</li>
-						<li>홍일이 오빠 놀리기</li>
-						<li>준수오빠 놀리기</li>
-						<li>롤하고싶당</li>
-						<li>비누랑 산책가기</li>
-						<li>살빠지면 좋겠다</li>
-						<li>자바스크립트 마스터</li>
-					</ol>
-				</div>
-				<div class="p-3">
-					<h4 class="font-italic">Elsewhere</h4>
 					<ol class="list-unstyled">
-						<li><a href="#">GitHub</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
+						<li><a href="https://twitter.com"><img src="image/트위터.png"></a></li>
+						<li><a href="https://www.instagram.com"><img src="image/인스타.png"></a></li>
+						<li><a href="https://www.facebook.com/"><img src="image/페북큰거.png"></a></li>
 					</ol>
 				</div>
 			</aside>

@@ -38,8 +38,11 @@
 
 <style type="text/css">
 .button{
-   border: none;
-   background-color: #FAF7C4;
+	  	margin-left: 10%;
+	   	background-color: transparent !important;
+		border-color: transparent;
+		color: black;
+   
 }
 #nav {
    border: 1px solid #ccc;
@@ -335,21 +338,27 @@ body {
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">JMT map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
    <hr class="my-hr1">
-
-
-   <h3 class="food" align="center">
-  	  <b style="color: #B512F6">W</b>hich place do you want to go?<br>
-      <b style="color: #F12E5B">W</b>hat do you want to eat?<br>
-      <b style="color: #24D50A">L</b>et's searching about JMT cook!<br><br>
-
-   </h3>
+<div class="dropdown">
+	&nbsp; &nbsp; &nbsp; &nbsp;
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+   JMT List <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+   	  <li><input type="button" id="butn" class="button" value="#서면 맛집" onclick="button1()"></li>
+      <li><input type="button" class="button" value="#남포동 맛집" onclick="button2()"></li>
+      <li><input type="button" class="button" value="#해운대 맛집" onclick="button3()"></li>
+      <li><input type="button" class="button" value="#동래 맛집" onclick="button4()"></li>
+      <li><input type="button" class="button" value="#범어사 맛집" onclick="button5()"></li>
+  </ul>
+  <br><br>
+</div>
 
    <main role="main" class="container" align="right">
    <div class="row">
@@ -651,18 +660,6 @@ body {
    </main>
    <br>
    
-   <div align="center">
-      <ui id="nav">
-      <li><input type="button" id="butn" class="button" value="#서면 맛집" onclick="button1()"></li>
-      <li><input type="button" class="button" value="#남포동 맛집" onclick="button2()"></li>
-      <li><input type="button" class="button" value="#해운대 맛집" onclick="button3()"></li>
-      <li><input type="button" class="button" value="#동래 맛집" onclick="button4()"></li>
-      <li><input type="button" class="button" value="#범어사 맛집" onclick="button5()"></li>
-      </ui>
-   </div>
-   <br>
-   <br>
-   <br>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
