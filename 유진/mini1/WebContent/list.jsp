@@ -32,8 +32,12 @@
 }
 
 body {
-	background-image: url("image/배경1.png");
-	background-size: 100%;
+	background: url("image/배경1.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: 50px;
 }
 /* 제목이랑 로그인 회원가입 */
 .titlecolor {
@@ -68,6 +72,9 @@ body {
 	list-style: none;
 	margin-bottom: 20px;
 }
+.menucolor{
+   background-color:rgba(30, 50, 105, 0.8);
+}
 </style>
 </head>
 <body>
@@ -89,7 +96,7 @@ body {
 		<hr class="my-hr1">
 	
 		<header id="headdddd">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<nav class="menucolor">
 				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span><img src="image/하트트.png"></span>
 				</button>
@@ -97,7 +104,7 @@ body {
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">JMT map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
 					</ul>
 				</div>
@@ -107,7 +114,7 @@ body {
 		
 		<hr class="my-hr1">
 		<div style="margin-bottom: 100px" class="container"></div>
-		<div class="table-responsive">
+		<div class="table-responsive" style="background-color: rgba(255, 255, 255, 0.5);">
 			<table class="table table-striped">
 				<thead>
 					<tr>
@@ -141,8 +148,8 @@ body {
 	</div>
 	<footer class="my-5 pt-5 text-muted text-center text-small" style="margin-top: 100px">
 	<br>
-		<p class="mb-1">&copy; 홍일 소라 유진 준수</p>
-		<ul class="list-inline">
+		<p class="mb-1" style="color: #ffffff; font-weight: 700;">&copy; 홍일 소라 유진 준수</p>
+		<ul class="list-inline" style="font-weight: 700;">
 			<li class="list-inline-item"><a href="#">Privacy</a></li>
 			<li class="list-inline-item"><a href="#">Terms</a></li>
 			<li class="list-inline-item"><a href="#">Support</a></li>

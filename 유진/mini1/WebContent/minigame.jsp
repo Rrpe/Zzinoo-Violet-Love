@@ -137,7 +137,7 @@ function javascript(){
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item"><a class="innercolor" href="Mypage.jsp">MyPage</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="list.do">Story</a>&nbsp;&nbsp; &nbsp; &nbsp;</li>
-						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">JMT map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+						<li class="nav-item"><a class="innercolor" href="Mapmain.jsp">Memory map</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 						<li class="nav-item"><a class="innercolor" href="minigame.jsp">Mini game</a>&nbsp; <br></li>
 					</ul>
 				</div>
@@ -190,8 +190,8 @@ function javascript(){
 	</div>
 	<footer class="my-5 pt-5 text-muted text-center text-small" style="margin-top: 100px">
 	<br>
-		<p class="mb-1">&copy; 홍일 소라 유진 준수</p>
-		<ul class="list-inline">
+		<p class="mb-1" style="color: #ffffff; font-weight: 700;">&copy; 홍일 소라 유진 준수</p>
+		<ul class="list-inline" style="font-weight: 700;">
 			<li class="list-inline-item"><a href="#">Privacy</a></li>
 			<li class="list-inline-item"><a href="#">Terms</a></li>
 			<li class="list-inline-item"><a href="#">Support</a></li>
