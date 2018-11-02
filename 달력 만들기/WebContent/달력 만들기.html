@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>달력</title>
+<script type="text/javascript" src="Cal.js"></script>
+<style type="text/css">
+.qwer th {
+	font-size: 20px;
+	height: 50px;
+	padding: 10px;
+	color: #000000;
+	border-bottom: 5px solid #000000;
+}
+
+.qwer td {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 굴림;
+	color: #000000;
+	padding: 15px;
+}
+tr:hover td {
+	border-bottom: 3px solid #000000;
+}
+</style>
+</head>
+<body>
+	<p></p>
+	<h3 align="center">달력</h3>
+	<table id="calendar" border="3" align="center" class="qwer" >
+		<tr>
+			<th><label onclick="prevCalendar()"><</label></th>
+			<th align="center" id="tbCalendarYM" colspan="5">yyyy년 m월</th>
+			<th><label onclick="nextCalendar()">> </label></th>
+		</tr>
+		<tr>
+			<td align="center" style="border-bottom: 3px solid #ff0000;"><font color="#ff0000">일</td>
+			<td align="center" style="border-bottom: 3px solid #000000;">월</td>
+			<td align="center" style="border-bottom: 3px solid #000000;">화</td>
+			<td align="center" style="border-bottom: 3px solid #000000;">수</td>
+			<td align="center" style="border-bottom: 3px solid #000000;">목</td>
+			<td align="center" style="border-bottom: 3px solid #000000;">금</td>
+			<td align="center" style="border-bottom: 3px solid #0000ff;"><font color="#0000ff">토</td>
+		</tr>
+	</table>
+	<script language="javascript" type="text/javascript">
+		buildCalendar();//
+	</script>
+</body>
+</html>
