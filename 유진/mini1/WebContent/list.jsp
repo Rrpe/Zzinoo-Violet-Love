@@ -119,6 +119,7 @@ body {
 				<thead>
 					<tr>
 						<th>사진</th>
+						<th>번호</th>
 						<th>이름</th>
 						<th>제목</th>
 						<th>날짜</th>

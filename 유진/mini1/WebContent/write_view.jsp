@@ -30,8 +30,12 @@
 	background: #ccc;
 }
 body {
-	background-image: url("image/배경1.png");
-	background-size: 100%;
+	background: url("image/배경1.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: 50px;
 }
 /* 제목이랑 로그인 회원가입 */
 .titlecolor {
@@ -65,6 +69,9 @@ body {
 	margin-left: 30%;
 	list-style: none;
 	margin-bottom: 20px;
+}
+.menucolor{
+   background-color:rgba(30, 50, 105, 0.8);
 }
 </style>
 
@@ -106,7 +113,7 @@ $("#imgInput").change(function(){
 		<hr class="my-hr1">
 	
 		<header id="headdddd">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<nav class="menucolor">
 				<button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span><img src="image/하트트.png"></span>
 				</button>

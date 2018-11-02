@@ -26,9 +26,9 @@
 	<Resource
 		auth="Container"
 		driverClassName="oracle.jdbc.driver.OracleDriver"
-		url="jdbc:oracle:thin:SYSTEM/Wjrmffld2@localhost:1521:orcl"
+		url="jdbc:oracle:thin:SYSTEM/0404@localhost:1521:orcl"
 		username="SYSTEM"
-		password="Wjrmffld2"
+		password="0404"
 		name="jdbc/Oracle11g"
 		type="javax.sql.DataSource"
 		maxActive="50"

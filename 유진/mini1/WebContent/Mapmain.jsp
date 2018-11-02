@@ -283,26 +283,29 @@ body {
 }
 /* 메뉴바  */
 .innercolor {
-   color: #BDBDBD;
-   font-size: 150%;
+	color: #BDBDBD;
+	font-size: 150%;
 }
 
 .innercolor:hover {
-   color: #C170EA;
+	color: #C170EA;
 }
 /* 버튼 투명화시키고 이미지 넣음 */
 .aaa {
-   background-color: transparent !important;
-   background-image: none !important;
-   border-color: transparent;
-   border: none;
-   color: #FFFFFF;
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: transparent;
+	border: none;
+	color: #FFFFFF;
 }
 /* 메뉴바 위치 */
 #headdddd ul {
-   margin-left: 30%;
-   list-style: none;
-   margin-bottom: 20px;
+	margin-left: 30%;
+	list-style: none;
+	margin-bottom: 20px;
+}
+.menucolor{
+   background-color:rgba(30, 50, 105, 0.8);
 }
 
 .food{color:#E8D9FF;}
@@ -334,7 +337,7 @@ body {
       <hr class="my-hr1">
    
       <header id="headdddd">
-         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <nav class="menucolor">
             <button class="aaa" type="button" data-toggle="collapse"data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span><img src="image/하트트.png"></span>
             </button>

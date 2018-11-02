@@ -71,8 +71,8 @@ p {
 
 /* ¸Þ´º¹Ù  */
 .innercolor {
-	color: blue;
-	font-size: 150%;
+	color: #BDBDBD;
+	font-size: 120%;
 }
 
 .innercolor:hover {
