@@ -52,7 +52,7 @@ body {
 /* ¸Þ´º¹Ù  */
 .innercolor {
 	color: #BDBDBD;
-	font-size: 120%;
+	font-size: 150%;
 }
 
 .innercolor:hover {

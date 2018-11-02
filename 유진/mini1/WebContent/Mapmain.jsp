@@ -284,7 +284,7 @@ body {
 /* 메뉴바  */
 .innercolor {
    color: #BDBDBD;
-   font-size: 120%;
+   font-size: 150%;
 }
 
 .innercolor:hover {

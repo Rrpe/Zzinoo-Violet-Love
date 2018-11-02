@@ -49,7 +49,7 @@ body {
 /* 메뉴바  */
 .innercolor {
    color: #BDBDBD;
-   font-size: 120%;
+   font-size: 150%;
 }
 
 .innercolor:hover {
@@ -65,7 +65,7 @@ body {
 }
 /* 메뉴바 위치 */
 #headdddd ul {
-   margin-left: 22%;
+   margin-left: 20%;
    list-style: none;
    margin-bottom: 20px;
 }
