@@ -280,34 +280,30 @@ body {
 }
 /* 메뉴바  */
 .innercolor {
-	color: #BDBDBD;
-	font-size: 120%;
+   color: #BDBDBD;
+   font-size: 150%;
 }
 
 .innercolor:hover {
-	color: #C170EA;
+   color: #C170EA;
 }
 /* 버튼 투명화시키고 이미지 넣음 */
 .aaa {
-	background-color: transparent !important;
-	background-image: none !important;
-	border-color: transparent;
-	border: none;
-	color: #FFFFFF;
+   background-color: transparent !important;
+   background-image: none !important;
+   border-color: transparent;
+   border: none;
+   color: #FFFFFF;
 }
 /* 메뉴바 위치 */
 #headdddd ul {
-	margin-left: 30%;
-	list-style: none;
-	margin-bottom: 20px;
+   margin-left: 30%;
+   list-style: none;
+   margin-bottom: 20px;
 }
 
 .food{color:#E8D9FF;}
 
-.titlecolor{color: #EAEAEA;}
-.titlecolor:hover{color:#C170EA;text-decoration:none !important;}
-.innercolor{color:#BDBDBD;}
-.innercolor:hover{color:#C170EA;text-decoration:none !important;}
 .menucolor{
    background-color:rgba(30, 50, 105, 0.8);
 }
@@ -386,7 +382,7 @@ body {
                </div>
 
                <script type="text/javascript"
-                  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b032c1996e179f015dfc92690e85686&libraries=services"></script>
+                  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cf2ec3c4db31d80b4c16c7ca9dd8472f&libraries=services"></script>
 
                <script>
                   // 마커를 담을 배열입니다
